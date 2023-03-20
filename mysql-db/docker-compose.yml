@@ -1,0 +1,30 @@
+version: '3.1'
+services:
+  mysql-db:
+    container_name: mysql-school-db
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_USER: username
+      MYSQL_PASSWORD: userpassword
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: schooldb
+      LANG: C.UTF_8
+      MYSQL_TCP_PORT: 3306
+    expose:
+      - "5439"
+    ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      - '5439:3306'
+    #volumes:
+      # If you want to copy the SQL scripts to create and fill tables, uncomment the previous line and the next five lines
+      #- ./../sql/create.sql:/docker-entrypoint-initdb.d/1.sql
+      #- ./../sql/drop.sql:/docker-entrypoint-initdb.d/2.sql
+      #- ./../sql/scheme.sql:/docker-entrypoint-initdb.d/3.sql
+      #- ./../sql/data.sql:/docker-entrypoint-initdb.d/4.sql
+      #- ./../sql/constraints.sql:/docker-entrypoint-initdb.d/5.sql
+      # if you want to keep the data, create datavolume directory and uncomment next line
+      # - ./datavolume:/var/lib/mysql
+volumes:
+  mysql-db:
+    driver: local

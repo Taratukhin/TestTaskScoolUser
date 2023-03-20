@@ -5,6 +5,9 @@
 *.so
 *.dylib
 
+# executable file
+schoolserver
+
 # Test binary, built with `go test -c`
 *.test
 

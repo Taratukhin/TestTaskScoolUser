@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GoLinterSettings">
+    <option name="enabledLinters">
+      <list>
+        <option value="exportloopref" />
+        <option value="predeclared" />
+        <option value="importas" />
+        <option value="noctx" />
+        <option value="gofumpt" />
+        <option value="gocritic" />
+        <option value="errcheck" />
+        <option value="gci" />
+        <option value="forcetypeassert" />
+        <option value="sqlclosecheck" />
+        <option value="nestif" />
+        <option value="ineffassign" />
+        <option value="wsl" />
+        <option value="exhaustive" />
+        <option value="nilerr" />
+        <option value="revive" />
+        <option value="nlreturn" />
+        <option value="prealloc" />
+        <option value="staticcheck" />
+        <option value="dupl" />
+        <option value="govet" />
+        <option value="forbidigo" />
+        <option value="errorlint" />
+        <option value="gomnd" />
+        <option value="misspell" />
+        <option value="errname" />
+        <option value="gomoddirectives" />
+        <option value="tagliatelle" />
+        <option value="typecheck" />
+        <option value="wastedassign" />
+        <option value="rowserrcheck" />
+        <option value="lll" />
+        <option value="makezero" />
+        <option value="bodyclose" />
+        <option value="nolintlint" />
+        <option value="unconvert" />
+        <option value="unused" />
+        <option value="whitespace" />
+        <option value="ifshort" />
+        <option value="gosimple" />
+      </list>
+    </option>
+    <option name="goLinterExe" value="$USER_HOME$/go/bin/golangci-lint" />
+    <option name="linterSelected" value="true" />
+  </component>
+</project>
